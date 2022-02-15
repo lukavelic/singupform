@@ -1,0 +1,159 @@
+:root {
+    --outline-invalid: 1px solid red;
+    --outline-valid: 1px solid green;
+}
+
+body, html {
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(39, 39, 39);    
+}
+
+.photo-container {
+    position: relative;
+}
+
+.photo {
+    height: 100vh;
+}
+
+.photo img{
+    height: 100vh;
+    position: relative;
+}
+
+.photo-overlay {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    margin-top: 30%;
+    padding: 50px 0px 50px 0px;
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;    
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 1000;
+}
+
+.overlay-text {
+    margin: 20px
+}
+
+.photo-copyright{
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.photo-copyright a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin: 0px 10vw 0px 10vw;
+}
+
+.right {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+}
+.description {
+    text-align: center;
+    padding: 10px 0px 30px 0px;    
+    box-shadow: 0 5px 10px -10px #000000;
+    font-size: 1.2rem;
+}
+form {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+.form-area {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 0 5px 10px -10px #000000;
+}
+
+fieldset {
+    border-style: none;
+    margin: auto ;
+    padding: 0px;
+}
+
+.form-row{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.form-row input{
+    width: 70%;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: 1px solid black;
+}
+
+.form-row input:valid {
+    outline: var(--outline-valid);
+}
+
+.form-row input:invalid {
+    outline: var(--outline-invalid);
+}
+
+.form-row select{
+    width: 15%;
+    height: 1.4rem;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    outline: 1px solid green;    
+}
+
+.form-row label{
+    display: block;
+    width: 8rem;
+    padding-bottom: 3px;
+    padding-left: 14%;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.form-row input[type='submit']{
+    margin-top: 10px;
+    width: 7rem;
+    height: 2rem;
+    outline: 1px solid green;
+    font-weight: 800;
+}
+
+.form-row input[type='submit']:hover{
+    background-color: rgb(216, 216, 216);
+}
+
+.form-row input[type='submit']:active{
+    box-shadow: 0 0 2px 2px rgb(173, 173, 173);
+}
+
+.form-row input[type='date'] {
+    padding: 1px 2px;
+}
+
+.form-row #sex, .form-row #category{
+    display: block;
+    margin-left: 14.5%;
+}
