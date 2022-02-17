@@ -3,23 +3,25 @@
     --outline-valid: 1px solid green;
 }
 
-body, html {
-    margin: 0px;
+body {
+    margin: 0;
+    padding: 0;
     font-family: 'Oswald', sans-serif;
     background-color: rgb(39, 39, 39);    
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
 .photo-container {
     position: relative;
-}
-
-.photo {
-    height: 100vh;
-}
-
-.photo img{
-    height: 100vh;
-    position: relative;
+    background-image: url(/singupform/simon-connellan-TQZlo6cC4s0-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 70%;
 }
 
 .photo-overlay {
@@ -53,15 +55,8 @@ body, html {
     text-decoration: none;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    margin: 0px 10vw 0px 10vw;
-}
-
 .right {
-    height: 100vh;
+    max-height: 100%;
     width: 100%;
     background-color: rgb(231, 231, 231);
 }
@@ -72,10 +67,11 @@ body, html {
     font-size: 1.2rem;
 }
 form {
-    width: 70%;
+    width: 100%;
     margin: auto;
     margin-top: 20px;
 }
+
 .form-area {
     display: flex;
     flex-wrap: wrap;
@@ -89,6 +85,7 @@ form {
 
 fieldset {
     border-style: none;
+    width: 70%;
     margin: auto ;
     padding: 0px;
 }
